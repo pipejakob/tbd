@@ -72,7 +72,9 @@ does](https://github.com/kris-nova/kubicorn/tree/58ccdfb5cd78ee67cc6146179bfa228
 
 ## How?
 
-tbd aims to be a drop-in replacement for kubeadm. The simplest invocation is:
+tbd's entire job is to intelligently bootstrap kubeadm and all of its
+dependencies so that you can simply run `kubeadm init` or `kubeadm join`
+afterward. The simplest invocation is:
 
     $ tbd
 
