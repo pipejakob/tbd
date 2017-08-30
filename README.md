@@ -119,8 +119,13 @@ the latest kubeadm 1.7.x release?
 
     $ tbd --kubeadm-version stable-1.7 -- init --kubernetes-version latest-1.7
 
+The naming and semantics of these flags aren't set in stone, but they are meant
+to demonstrate the kind of functionality and power meant to be provided by tbd.
+
 ## tbd?
 
 The name "tbd" is a deliberate placeholder until I come up with a better name.
 Candidate names considered were things like "z2k" or "ztok" to mean "zero to
-kubeadm-ready," but both fail the Google search test of uniqueness.
+kubeadm-ready," but both fail the Google search test of uniqueness. I fully
+intend to come up with a better name and perform a global find-and-replace on
+this repository.
