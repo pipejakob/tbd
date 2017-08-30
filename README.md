@@ -52,6 +52,13 @@ On a Debian-based OS, this might look like:
     $ systemctl enable kubelet || true
     $ systemctl start kubelet || true
 
+This also hides the step of configuring kubelet, because the `.deb` packages
+perform that step [automatically
+now](https://github.com/kubernetes/release/blob/7b25ad5dfc52e57c9905338b2abac3d13b896d23/debian/xenial/kubeadm/channel/stable/etc/systemd/system/kubelet.service.d/10-kubeadm.conf).
+If not using a system package, one still has to figure out what flags should be
+passed to it, and potentially how to keep it up and running if not using
+systemctl.
+
 On Redhat/CentOS, the steps would be analogous but different, using `yum`
 commands instead of `apt-get`.
 
