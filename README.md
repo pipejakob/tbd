@@ -30,7 +30,7 @@ However, those simple steps omit the fact that in order to be able to run
   2. install a compatible container runtime like Docker
   3. install a compatible version of kubelet
   4. run kubelet with the correct configuration to use the appropriate container
-     runtime.
+     runtime
 
 On a Debian-based OS, this might look like:
 
